@@ -1,9 +1,41 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.button {
+  --min-size: 44px;
+  --border-width: 1px;
+
+  --background-color: #fff;
+  --border-color: #1890ff;
+  --color: #000;
+
+  display: inline;
+  min-height: var(--min-size);
+  min-width: var(--min-size);
+
+  color: var(--color);
+  background-color: var(--background-color);
+
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+  border-style: solid;
+}
+
+.spinner {
+  display: inline-block;
+  padding: 2px;
+
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }

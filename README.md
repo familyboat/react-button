@@ -15,12 +15,12 @@ npm install --save @familyboat/react-button
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from '@familyboat/react-button'
+import { Button } from '@familyboat/react-button'
 import '@familyboat/react-button/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Button />
   }
 }
 ```
